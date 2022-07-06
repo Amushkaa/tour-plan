@@ -450,6 +450,15 @@ template {
   .container {
     max-width: 960px;
   }
+  .container .slider {
+    width: 590px;
+  }
+  .container .swiper-slide__img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -474,6 +483,24 @@ template {
     line-height: 15px;
   }
   .container .search__input {
+    width: 340px;
+  }
+  .container .hotel-grid {
+    flex-direction: column;
+  }
+  .container .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .container .hotel-right {
+    flex-direction: row;
+  }
+  .container .booking {
+    width: 340px;
+  }
+  .container .slider {
+    width: 100%;
+  }
+  .container .map {
     width: 340px;
   }
 }
@@ -501,27 +528,41 @@ template {
     height: 1px;
     background-color: #333333;
   }
-
-  .stars {
+  .container .stars {
     flex-basis: auto;
   }
-
-  .hotel-name {
+  .container .hotel-wrapper {
+    justify-content: space-between;
+  }
+  .container .hotel-name {
     flex-basis: 100%;
   }
-  .hotel-info__text {
+  .container .hotel-info__text {
     width: 100%;
   }
-  .hotel-info__name {
+  .container .hotel-info__name {
     margin-top: 10px;
     margin-bottom: 0;
   }
-  .hotel-info__ratting {
+  .container .hotel-info__ratting {
     display: none;
   }
-  .hotel-info__offer {
+  .container .hotel-info__offer {
     order: -1;
     margin-left: 0;
+  }
+  .container .slider {
+    height: 350px;
+  }
+  .container .hotel-right {
+    flex-direction: column;
+    min-height: 450px;
+  }
+  .container .booking {
+    width: 100%;
+  }
+  .container .map {
+    width: 100%;
   }
 }
 .breadcrumb-list {
@@ -621,7 +662,7 @@ template {
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
@@ -640,6 +681,7 @@ template {
 
 .slider {
   width: 720px;
+  height: 450px;
 }
 .slider-button {
   position: absolute;
@@ -755,6 +797,7 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: black;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
