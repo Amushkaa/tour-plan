@@ -685,7 +685,6 @@ template {
 
 .newsletter {
   padding: 98px 0 87px 0;
-  background-image: url(../image/newsletter-bg.jfif);
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -753,6 +752,11 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #FFFFFF;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
 }
 
 @media (max-width: 1200px) {
