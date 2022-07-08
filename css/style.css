@@ -776,7 +776,7 @@ template {
   position: relative;
   flex-direction: column;
   align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -874,10 +874,10 @@ template {
   .container {
     max-width: 960px;
   }
-  .container .slider {
+  .container .hotel-slider {
     width: 590px;
   }
-  .container .swiper-slide__img {
+  .container .hotel-slider__img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
@@ -918,14 +918,17 @@ template {
   .container .hotel-right, .newsletter-wrapper .hotel-right {
     flex-direction: row;
   }
+  .container .hotel-slider, .newsletter-wrapper .hotel-slider {
+    width: 100%;
+  }
   .container .booking, .newsletter-wrapper .booking {
     width: 340px;
   }
-  .container .slider, .newsletter-wrapper .slider {
-    width: 100%;
-  }
   .container .map, .newsletter-wrapper .map {
     width: 340px;
+  }
+  .container .reviews-slider__item, .newsletter-wrapper .reviews-slider__item {
+    max-width: 580px;
   }
 }
 @media (max-width: 768px) {
@@ -975,12 +978,12 @@ template {
     order: -1;
     margin-left: 0;
   }
-  .container .slider {
-    height: 350px;
-  }
   .container .hotel-right {
     flex-direction: column;
     min-height: 450px;
+  }
+  .container .hotel-slider {
+    height: 350px;
   }
   .container .booking {
     width: 100%;
@@ -999,18 +1002,41 @@ template {
   .subscribe {
     width: 100%;
   }
+
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -65px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    transform: translate(50%, 0);
+    margin-right: -65px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
 
-  .slider {
-    height: 250px;
-  }
-
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .hotel-slider {
+    height: 250px;
   }
 
   .newsletter {
@@ -1022,5 +1048,12 @@ template {
 
   .subscribe {
     width: 100%;
+  }
+
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 245px;
+    margin: 0 auto 42px;
   }
 }/*# sourceMappingURL=style.css.map */
