@@ -870,6 +870,79 @@ template {
   max-width: 537px;
 }
 
+.activities {
+  padding: 60px 0 50px 0;
+}
+.activities__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.card__tittle {
+  margin-top: auto;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  z-index: 1;
+}
+.card__button {
+  z-index: 1;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 7px 22px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -882,6 +955,11 @@ template {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 @media (max-width: 992px) {
@@ -929,6 +1007,18 @@ template {
   }
   .container .reviews-slider__item, .newsletter-wrapper .reviews-slider__item {
     max-width: 580px;
+  }
+
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 340px;
+    height: 230px;
   }
 }
 @media (max-width: 768px) {
@@ -1026,6 +1116,11 @@ template {
     font-size: 30px;
     margin-bottom: 50px;
   }
+
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1055,5 +1150,9 @@ template {
     line-height: 23px;
     max-width: 245px;
     margin: 0 auto 42px;
+  }
+
+  .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
