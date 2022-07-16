@@ -91,9 +91,42 @@
     .container
         max-width: 576px
         width: 92%
-        .navbar
-            &__search, &-menu, &__user
-                display: none
+    body
+        padding-top: 78px
+    .navbar
+        &-bottom
+            display: none
+            padding-top: 30px
+            &--visible
+                display: block
+                position: fixed
+                left: 0
+                right: 0
+                bottom: 0
+                top: 78px
+        &__user, &__search
+            &--mobile
+                &_hidden
+                    display: none
+                &_visible
+                    display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+        &-menu
+            flex-direction: column
+            &__item
+                margin-bottom: 20px
+                &--mobile
+                    &_visible
+                        display: block
+        &--mobile
+            &_fixed
+                position: fixed
+                top: 0
+                right: 0
+                left: 0
+                z-index: 99
         .menu
             &-button
                 display: flex
@@ -109,24 +142,29 @@
                     width: 16px
                     height: 1px
                     background-color: $text-color
-        .stars
-            flex-basis: auto
-        .hotel
-            &-wrapper
-                justify-content: space-between
-            &-name
-                flex-basis: 100%
-            &-info
-                &__text
-                    width: 100%
-                &__name
-                    margin-top: 10px
-                    margin-bottom: 0
-                &__ratting
-                    display: none
-                &__offer
-                    order: -1
-                    margin-left: 0
+        .user
+            &__name
+                &--light
+                    margin: 10px 0 0 0
+                    color: $light
+    .stars
+        flex-basis: auto
+    .hotel
+        &-wrapper
+            justify-content: space-between
+        &-name
+            flex-basis: 100%
+        &-info
+            &__text
+                width: 100%
+            &__name
+                margin-top: 10px
+                margin-bottom: 0
+            &__ratting
+                display: none
+            &__offer
+                order: -1
+                margin-left: 0
         .hotel
             &-right
                 flex-direction: column

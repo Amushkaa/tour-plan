@@ -394,6 +394,9 @@ template {
   font-size: 14px;
   line-height: 18px;
 }
+.navbar-menu__item--mobile_visible {
+  display: none;
+}
 
 .logo {
   width: 177px;
@@ -1217,10 +1220,50 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .container .navbar__search, .container .navbar-menu, .container .navbar__user {
+
+  body {
+    padding-top: 78px;
+  }
+
+  .navbar-bottom {
+    display: none;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+  }
+  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
   }
-  .container .menu-button {
+  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile_visible {
+    display: block;
+  }
+  .navbar--mobile_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .navbar .menu-button {
     display: flex;
     width: 16px;
     height: 11px;
@@ -1231,45 +1274,51 @@ template {
     border: none;
     cursor: pointer;
   }
-  .container .menu-button__line {
+  .navbar .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
   }
-  .container .stars {
+  .navbar .user__name--light {
+    margin: 10px 0 0 0;
+    color: #FFFFFF;
+  }
+
+  .stars {
     flex-basis: auto;
   }
-  .container .hotel-wrapper {
+
+  .hotel-wrapper {
     justify-content: space-between;
   }
-  .container .hotel-name {
+  .hotel-name {
     flex-basis: 100%;
   }
-  .container .hotel-info__text {
+  .hotel-info__text {
     width: 100%;
   }
-  .container .hotel-info__name {
+  .hotel-info__name {
     margin-top: 10px;
     margin-bottom: 0;
   }
-  .container .hotel-info__ratting {
+  .hotel-info__ratting {
     display: none;
   }
-  .container .hotel-info__offer {
+  .hotel-info__offer {
     order: -1;
     margin-left: 0;
   }
-  .container .hotel-right {
+  .hotel .hotel-right {
     flex-direction: column;
     min-height: 450px;
   }
-  .container .hotel-slider {
+  .hotel .hotel-slider {
     height: 350px;
   }
-  .container .booking {
+  .hotel .booking {
     width: 100%;
   }
-  .container .map {
+  .hotel .map {
     width: 100%;
   }
 
