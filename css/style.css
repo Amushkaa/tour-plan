@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -1047,7 +1048,7 @@ template {
 }
 .footer__text {
   color: #BDBDBD;
-  margin-bottom: 22px;
+  margin-bottom: 22pxы;
 }
 .footer__link {
   text-decoration: none;
@@ -1069,6 +1070,9 @@ template {
   padding: 18px 23px;
   flex-basis: 100%;
   margin-bottom: 23px;
+  resize: none;
+  width: 539px;
+  height: 123px;
 }
 .footer__button {
   min-width: 160px;
@@ -1377,5 +1381,13 @@ template {
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
+  }
+  .footer__info {
+    order: 0;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__button {
+    order: 1;
   }
 }/*# sourceMappingURL=style.css.map */
