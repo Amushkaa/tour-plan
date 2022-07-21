@@ -18,6 +18,36 @@ img {
   max-width: 100%;
 }
 
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.message {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 18px 23px;
+  resize: none;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -26,10 +56,8 @@ img {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -64,12 +92,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -77,10 +102,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -97,13 +120,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -121,10 +141,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -174,14 +192,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -189,8 +203,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -199,8 +212,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -249,18 +261,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -283,10 +289,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -302,10 +306,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -320,10 +322,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -1058,37 +1058,14 @@ template {
   color: inherit;
 }
 .footer__input {
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
   margin-bottom: 15px;
   flex-basis: 48%;
 }
 .footer__message {
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 18px 23px;
   flex-basis: 100%;
   margin-bottom: 23px;
-  resize: none;
   width: 539px;
-  height: 123px;
-}
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  background-color: #EC1F46;
-  border: none;
-  border-radius: 4px;
+  height: 123pxs;
 }
 .footer__info {
   font-style: normal;
@@ -1096,6 +1073,75 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  border-radius: 8px;
+  background-color: #0A223D;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+.modal__info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  right: 0;
 }
 
 @media (max-width: 1200px) {
@@ -1111,12 +1157,10 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   .card {
     width: 230px;
     height: 230px;
   }
-
   .footer__input {
     flex-basis: 100%;
   }
@@ -1167,19 +1211,16 @@ template {
   .container .reviews-slider__item, .newsletter-wrapper .reviews-slider__item {
     max-width: 580px;
   }
-
   .activities-wrapper {
     flex-wrap: wrap;
   }
   .activities__card {
     margin-bottom: 20px;
   }
-
   .card {
     width: 340px;
     height: 250px;
   }
-
   .footer-wrapper {
     grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
@@ -1220,11 +1261,9 @@ template {
     max-width: 576px;
     width: 92%;
   }
-
   body {
     padding-top: 78px;
   }
-
   .navbar-bottom {
     display: none;
     padding-top: 30px;
@@ -1283,11 +1322,9 @@ template {
     margin: 10px 0 0 0;
     color: #FFFFFF;
   }
-
   .stars {
     flex-basis: auto;
   }
-
   .hotel-wrapper {
     justify-content: space-between;
   }
@@ -1321,18 +1358,15 @@ template {
   .hotel .map {
     width: 100%;
   }
-
   .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
     flex-direction: column;
     align-items: flex-start;
   }
-
   .subscribe {
     width: 100%;
   }
-
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1356,12 +1390,10 @@ template {
     font-size: 30px;
     margin-bottom: 50px;
   }
-
   .card {
     width: 49%;
     height: 255px;
   }
-
   .footer__input {
     flex-basis: 100%;
   }
@@ -1370,36 +1402,30 @@ template {
   .logo {
     width: 99px;
   }
-
   .hotel__slider {
     margin-bottom: 20px;
   }
   .hotel-slider {
     height: 250px;
   }
-
   .newsletter {
     padding: 76px 0 83px 0;
   }
   .newsletter__title {
     margin-bottom: 37px;
   }
-
   .subscribe {
     width: 100%;
   }
-
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
     max-width: 245px;
     margin: 0 auto 42px;
   }
-
   .card {
     width: 100%;
   }
-
   .footer-wrapper {
     grid-template-columns: 1fr;
   }
